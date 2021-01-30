@@ -18,17 +18,17 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>nacos-all</artifactId>
-        <groupId>com.alibaba.nacos</groupId>
+        <groupId>cn.javaboot.nacos</groupId>
         <version>${revision}</version>
     </parent>
-    
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>nacos-istio</artifactId>
     <packaging>jar</packaging>
-    
+
     <name>nacos-istio ${project.version}</name>
     <url>http://nacos.io</url>
-    
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -55,7 +55,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>nacos-core</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty-shaded</artifactId>
@@ -90,7 +90,7 @@
             <artifactId>netty-common</artifactId>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -110,7 +110,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.alibaba.nacos.istio.IstioApp</mainClass>
+                            <mainClass>cn.javaboot.nacos.istio.IstioApp</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
